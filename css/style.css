@@ -1,0 +1,425 @@
+@charset "UTF-8";
+/* Las variables van arriba de todo */
+@import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,400;1,700&display=swap");
+* {
+  margin: 0;
+  padding: 0; }
+
+/* Secciones */
+/* ENCABEZAD0 */
+.img-logo {
+  width: 300px; }
+
+.navegador {
+  font-style: none;
+  font-weight: bolder; }
+
+.navegador__listaMenu {
+  font-size: 20px;
+  list-style: none;
+  padding: 25px; }
+
+.navegador__listaMenu li {
+  margin-left: 50px;
+  display: inline-block; }
+
+.translate:hover {
+  translate: 2px; }
+
+.navegador__listaMenu a {
+  text-decoration: none;
+  color: black; }
+
+.navegador__listaMenu-activo {
+  font-size: 25px; }
+
+/* FOOTER */
+.footer {
+  background-color: #fafaf1; }
+
+.tituloFooter {
+  font-size: 15px;
+  font-weight: bold; }
+
+.listaFooter {
+  font-size: 20px;
+  list-style: none; }
+
+.listaFooter a {
+  text-decoration: none;
+  color: black; }
+
+.img-footer {
+  width: 120px;
+  float: left; }
+
+main {
+  background-color: #adada9;
+  height: auto;
+  padding: 0 0 3rem 0; }
+
+h1 {
+  padding: 3rem;
+  font-size: 45px; }
+
+h2 {
+  font-family: "Barlow", sans-serif;
+  font-size: 35px;
+  margin: 0 0 1rem 3rem; }
+
+p {
+  color: black;
+  text-align: center;
+  padding: 0rem 2rem 2rem 2rem;
+  font-size: 22px;
+  text-align: center; }
+
+.encabezado-comoPedir {
+  background-image: url(https://res.cloudinary.com/dfbwcrulp/image/upload/v1676503979/desarrollo_web/header-como-pedir.jpg);
+  background-size: cover;
+  height: 600px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start; }
+
+.encabezado-contacto {
+  background-image: url(https://res.cloudinary.com/dfbwcrulp/image/upload/v1676504642/desarrollo_web/opcion4_i0xq7c.webp);
+  background-size: cover;
+  height: 600px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start; }
+
+.encabezado-creaciones {
+  background-image: url(https://res.cloudinary.com/dfbwcrulp/image/upload/v1676417150/desarrollo_web/header-creaciones.jpg);
+  background-size: cover;
+  height: 600px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start; }
+
+/* MEDIA QUERY = DISPOITIVOS MEDIANOS */
+/* Dispositivos hasta 768px son considerados medianos  */
+@media (max-width: 768px) {
+  .img-logo {
+    width: 200px; }
+  .navegador__listaMenu {
+    font-size: 20px;
+    list-style: none;
+    padding: 10px; }
+  .navegador__listaMenu-activo {
+    font-size: 25px; } }
+
+/*  Dispositivos HASTA 425px  - CELULARES */
+@media (max-width: 425px) {
+  .navegador__listaMenu a {
+    text-decoration: none;
+    color: #fafaf1; }
+  .encabezado-home {
+    background-image: url(../recursos/inLove.jpg);
+    background-size: center; }
+  p {
+    padding: 1rem 1rem 1rem 1rem; }
+  .img-logo {
+    width: 150px; }
+  .encabezado-creaciones {
+    background-image: url(../recursos/creaciones-copo.jpg);
+    background-size: center;
+    height: 700px; }
+  .navegador__listaMenu {
+    font-size: 15px;
+    list-style: none;
+    padding: 10px; }
+  .navegador__listaMenu-activo {
+    font-size: 15px; } }
+
+.encabezado-cursos {
+  background-image: url(https://res.cloudinary.com/dfbwcrulp/image/upload/v1676504553/desarrollo_web/header-creaciones1.jpg);
+  background-size: cover;
+  height: 600px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start; }
+
+.encabezado-home {
+  background-image: url(https://res.cloudinary.com/dfbwcrulp/image/upload/v1676417148/desarrollo_web/home.jpg);
+  background-size: cover;
+  height: 600px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start; }
+
+.encabezado-quienSoy {
+  background-image: url(https://res.cloudinary.com/dfbwcrulp/image/upload/v1676503553/desarrollo_web/header-creaciones-1_xdgjuc.webp);
+  background-size: cover;
+  height: 600px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start; }
+
+/* SECCIÓN - CREACIONES */
+.grid-galeria {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas: "banner-principal banner-principal banner-principal banner-principal" "producto-1 producto-2 producto-3 producto-4" "producto-1 producto-2 producto-3 producto-4" "producto-5 producto-6 producto-7 producto-8" "producto-5 producto-6 producto-7 producto-8"; }
+
+.producto-nombre {
+  position: relative;
+  bottom: 10%;
+  font-size: 25px;
+  font-weight: 900;
+  color: #fafaf1; }
+
+.banner-principal {
+  grid-area: banner-principal; }
+
+.banner-principal p {
+  font-size: 22px; }
+
+.producto-1 {
+  grid-area: producto-1;
+  margin: 8px; }
+
+.producto-1 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; }
+
+.producto-2 {
+  grid-area: producto-2;
+  margin: 8px; }
+
+.producto-2 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; }
+
+.producto-3 {
+  grid-area: producto-3;
+  margin: 8px; }
+
+.producto-3 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; }
+
+.producto-4 {
+  grid-area: producto-4;
+  margin: 8px; }
+
+.producto-4 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; }
+
+.producto-5 {
+  grid-area: producto-5;
+  margin: 8px; }
+
+.producto-5 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; }
+
+.producto-6 {
+  grid-area: producto-6;
+  margin: 8px; }
+
+.producto-6 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; }
+
+.producto-7 {
+  grid-area: producto-7;
+  margin: 8px; }
+
+.producto-7 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; }
+
+.producto-8 {
+  grid-area: producto-8;
+  margin: 8px; }
+
+.producto-8 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; }
+
+/* MEDIA QUERY = DISPOITIVOS MEDIANOS */
+/* Dispositivos hasta 768px son considerados medianos  */
+@media (max-width: 768px) {
+  .grid-galeria {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: "banner-principal banner-principal" "producto-1 producto-2" "producto-1 producto-2" "producto-3 producto-4" "producto-3 producto-4" "producto-5 producto-6" "producto-5 producto-6" "producto-7 producto-8" "producto-7 producto-8"; }
+  .banner-principal {
+    grid-area: banner-principal; }
+  .producto-1 {
+    grid-area: producto-1;
+    margin: 8px; }
+  .producto-1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; }
+  .producto-2 {
+    grid-area: producto-2;
+    margin: 8px; }
+  .producto-2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; }
+  .producto-3 {
+    grid-area: producto-3;
+    margin: 8px; }
+  .producto-3 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; }
+  .producto-4 {
+    grid-area: producto-4;
+    margin: 8px; }
+  .producto-4 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; }
+  .producto-5 {
+    grid-area: producto-5;
+    margin: 8px; }
+  .producto-5 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; }
+  .producto-6 {
+    grid-area: producto-6;
+    margin: 8px; }
+  .producto-6 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; }
+  .producto-7 {
+    grid-area: producto-7;
+    margin: 8px; }
+  .producto-7 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; }
+  .producto-8 {
+    grid-area: producto-8;
+    margin: 8px; }
+  .producto-8 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; } }
+
+/*  Dispositivos HASTA 425px  - CELULARES */
+@media (max-width: 425px) {
+  .grid-galeria {
+    display: grid;
+    grid-auto-rows: 1fr;
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: "banner-principal" "producto-1" "producto-2" "producto-3" "producto-4" "producto-5" "producto-6" "producto-7" "producto-8"; }
+  .banner-principal {
+    grid-area: banner-principal; }
+  .producto-1 {
+    grid-area: producto-1; }
+  .producto-1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; }
+  .producto-2 {
+    grid-area: producto-2; }
+  .producto-2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; }
+  .producto-3 {
+    grid-area: producto-3; }
+  .producto-3 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; }
+  .producto-4 {
+    grid-area: producto-4; }
+  .producto-4 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; }
+  .producto-5 {
+    grid-area: producto-5; }
+  .producto-5 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; }
+  .producto-6 {
+    grid-area: producto-6; }
+  .producto-6 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; }
+  .producto-7 {
+    grid-area: producto-7; }
+  .producto-7 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; }
+  .producto-8 {
+    grid-area: producto-8; }
+  .producto-8 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; } }
+
+.div-cursos {
+  font-family: "Barlow", sans-serif;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-evenly; }
+
+.videos-cursos {
+  height: 500px;
+  width: 400px;
+  margin: 0 0 0 3rem; }
+
+/* ANIMACIONES */
+.h1-bienvenidos {
+  animation-name: bienvenidos;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  font-size: 60px; }
+
+@keyframes bienvenidos {
+  10% {
+    color: grey;
+    transform: translateX(20px); }
+  50% {
+    color: #c6bdbd;
+    transform: translateX(70px); }
+  100% {
+    color: #fafaf1;
+    transform: translateX(70px); } }
+
+.texto {
+  font-family: "Barlow", sans-serif;
+  font-size: 22px; }
+
+.div-quien-soy {
+  font-family: "Barlow", sans-serif;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-evenly; }
+
+.foto-presentacion {
+  height: 500px;
+  margin: 0 0 0 2rem; }

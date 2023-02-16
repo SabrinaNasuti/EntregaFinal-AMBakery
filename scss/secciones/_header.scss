@@ -1,0 +1,36 @@
+
+/* ENCABEZAD0 */
+.img-logo {
+    width: 300px;
+}
+
+.navegador {
+    font-style: none;
+    font-weight: bolder;
+}
+
+.navegador__listaMenu {
+    font-size: $titulo-navegador;
+    list-style: none;
+    padding: 25px;
+}
+
+.navegador__listaMenu li {
+    margin-left: 50px;
+    display: inline-block;
+}
+
+.translate:hover {
+    translate: 2px;
+}
+
+
+
+.navegador__listaMenu a {
+    text-decoration: none;  
+    color: black;
+}
+
+.navegador__listaMenu-activo {
+    font-size: $titulo-navegador-activo;
+}

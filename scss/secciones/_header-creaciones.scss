@@ -1,0 +1,67 @@
+.encabezado-creaciones {
+  background-image: url(https://res.cloudinary.com/dfbwcrulp/image/upload/v1676417150/desarrollo_web/header-creaciones.jpg);
+  background-size: cover;
+  height: 600px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+
+/* MEDIA QUERY = DISPOITIVOS MEDIANOS */
+/* Dispositivos hasta 768px son considerados medianos  */
+@media (max-width: 768px) {
+
+  .img-logo {
+      width: 200px;
+  }
+
+  .navegador__listaMenu {
+      font-size: 20px;
+      list-style: none;
+      padding: 10px;
+  }
+
+  .navegador__listaMenu-activo {
+      font-size: 25px;
+  }
+}
+
+/*  Dispositivos HASTA 425px  - CELULARES */
+@media (max-width: 425px) {
+  .navegador__listaMenu a {
+    text-decoration: none;
+    color: rgb(250, 250, 241);
+  }
+
+  .encabezado-home {
+    background-image: url(../recursos/inLove.jpg);
+    background-size: center;
+  }
+
+  p {
+    padding: 1rem 1rem 1rem 1rem;
+  }
+
+  .img-logo {
+    width: 150px;
+  }
+
+  .encabezado-creaciones {
+    background-image: url(../recursos/creaciones-copo.jpg);
+    background-size: center;
+    height: 700px;
+  }
+
+  .navegador__listaMenu {
+    font-size: 15px;
+    list-style: none;
+    padding: 10px;
+  }
+
+  .navegador__listaMenu-activo {
+    font-size: 15px;
+  }
+
+}

@@ -1,0 +1,333 @@
+/* SECCIÓN - CREACIONES */
+.grid-galeria {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+    "banner-principal banner-principal banner-principal banner-principal"
+    "producto-1 producto-2 producto-3 producto-4"
+    "producto-1 producto-2 producto-3 producto-4"
+    "producto-5 producto-6 producto-7 producto-8"
+    "producto-5 producto-6 producto-7 producto-8";
+}
+
+.producto-nombre {
+  position: relative;
+  bottom: 10%;
+  font-size: $titulo-producto;
+  font-weight: 900;
+  color: $color-letra-secundario;
+}
+
+.banner-principal {
+  grid-area: banner-principal;
+}
+
+.banner-principal p {
+  font-size: $texto-gereral;
+}
+
+.producto-1 {
+  grid-area: producto-1;
+  margin: 8px;
+}
+
+.producto-1 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.producto-2 {
+  grid-area: producto-2;
+  margin: 8px;
+}
+
+.producto-2 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.producto-3 {
+  grid-area: producto-3;
+  margin: 8px;
+}
+
+.producto-3 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.producto-4 {
+  grid-area: producto-4;
+  margin: 8px;
+}
+
+.producto-4 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.producto-5 {
+  grid-area: producto-5;
+  margin: 8px;
+}
+
+.producto-5 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.producto-6 {
+  grid-area: producto-6;
+  margin: 8px;
+}
+
+.producto-6 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.producto-7 {
+  grid-area: producto-7;
+  margin: 8px;
+}
+
+.producto-7 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.producto-8 {
+  grid-area: producto-8;
+  margin: 8px;
+}
+
+.producto-8 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* MEDIA QUERY = DISPOITIVOS MEDIANOS */
+/* Dispositivos hasta 768px son considerados medianos  */
+@media (max-width: 768px) {
+  .grid-galeria {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+      "banner-principal banner-principal"
+      "producto-1 producto-2"
+      "producto-1 producto-2"
+      "producto-3 producto-4"
+      "producto-3 producto-4"
+      "producto-5 producto-6"
+      "producto-5 producto-6"
+      "producto-7 producto-8"
+      "producto-7 producto-8";
+  }
+
+  .banner-principal {
+    grid-area: banner-principal;
+  }
+
+  .producto-1 {
+    grid-area: producto-1;
+    margin: 8px;
+  }
+
+  .producto-1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .producto-2 {
+    grid-area: producto-2;
+    margin: 8px;
+  }
+
+  .producto-2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .producto-3 {
+    grid-area: producto-3;
+    margin: 8px;
+  }
+
+  .producto-3 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .producto-4 {
+    grid-area: producto-4;
+    margin: 8px;
+  }
+
+  .producto-4 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .producto-5 {
+    grid-area: producto-5;
+    margin: 8px;
+  }
+
+  .producto-5 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .producto-6 {
+    grid-area: producto-6;
+    margin: 8px;
+  }
+
+  .producto-6 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .producto-7 {
+    grid-area: producto-7;
+    margin: 8px;
+  }
+
+  .producto-7 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .producto-8 {
+    grid-area: producto-8;
+    margin: 8px;
+  }
+
+  .producto-8 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+/*  Dispositivos HASTA 425px  - CELULARES */
+@media (max-width: 425px) {
+  .grid-galeria {
+    display: grid;
+    grid-auto-rows: 1fr;
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+
+    grid-template-areas:
+      "banner-principal"
+      "producto-1"
+      "producto-2"
+      "producto-3"
+      "producto-4"
+      "producto-5"
+      "producto-6"
+      "producto-7"
+      "producto-8";
+  }
+
+  .banner-principal {
+    grid-area: banner-principal;
+  }
+
+  .producto-1 {
+    grid-area: producto-1;
+  }
+
+  .producto-1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .producto-2 {
+    grid-area: producto-2;
+  }
+
+  .producto-2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .producto-3 {
+    grid-area: producto-3;
+  }
+
+  .producto-3 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .producto-4 {
+    grid-area: producto-4;
+  }
+
+  .producto-4 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .producto-5 {
+    grid-area: producto-5;
+  }
+
+  .producto-5 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .producto-6 {
+    grid-area: producto-6;
+  }
+
+  .producto-6 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .producto-7 {
+    grid-area: producto-7;
+  }
+
+  .producto-7 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .producto-8 {
+    grid-area: producto-8;
+  }
+
+  .producto-8 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}

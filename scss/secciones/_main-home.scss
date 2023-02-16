@@ -1,0 +1,26 @@
+/* ANIMACIONES */
+
+.h1-bienvenidos{
+    animation-name: bienvenidos;
+    animation-duration: 1s;
+    animation-iteration-count: 1 ;
+     font-size: $titulos-home;
+}
+
+
+
+@keyframes bienvenidos{
+    10%{
+        color: grey;
+        transform: translateX(20px);
+
+    }
+    50%{
+        color: rgb(198, 189, 189);
+        transform: translateX(70px);        
+    }
+    100%{
+        color: rgb(250, 250, 241);
+        transform: translateX(70px); 
+    }
+}

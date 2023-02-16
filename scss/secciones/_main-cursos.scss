@@ -1,0 +1,13 @@
+.div-cursos{
+    font-family: $typo-principal;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+}
+
+.videos-cursos {    
+    height: 500px;
+    width: 400px;    
+    margin:  0 0 0 3rem;
+}
+

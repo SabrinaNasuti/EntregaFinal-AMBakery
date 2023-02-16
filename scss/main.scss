@@ -1,0 +1,28 @@
+/* Las variables van arriba de todo */
+@import './utilidades/colors';
+@import './utilidades/typo';
+
+@import './utilidades/reset';
+
+/* Secciones */
+@import './secciones/header';
+@import './secciones/footer';
+@import './secciones/main';
+
+@import './secciones/header-como-pedir';
+@import './secciones/header-contacto';
+@import './secciones/header-creaciones';
+@import './secciones/header-cursos';
+@import './secciones/header-home';
+@import './secciones/header-quien-soy';
+
+
+@import './secciones/main-creaciones';
+@import './secciones/main-cursos';
+@import './secciones/main-home';
+@import './secciones/main-como-pedir';
+@import './secciones/main-quien-soy';
+
+
+
+
