@@ -7,3 +7,13 @@
     justify-content: space-between;
     align-items: flex-start
 }
+
+/*  Dispositivos HASTA 425px  - CELULARES */
+@media(max-width: 425px) {
+
+    .encabezado-contacto {
+        background-image: url(https://res.cloudinary.com/dfbwcrulp/image/upload/v1676595934/desarrollo_web/creaciones4_wnk1cq.jpg);
+        background-size: center;
+        height: 700px;       
+    }
+  }

@@ -7,3 +7,13 @@
     justify-content: space-between;
     align-items: flex-start
 }
+
+/*  Dispositivos HASTA 425px  - CELULARES */
+@media(max-width: 425px) {
+
+    .encabezado-cursos {
+        background-image: url(https://res.cloudinary.com/dfbwcrulp/image/upload/v1676595943/desarrollo_web/20220212_124848_f341bf.jpg);
+        background-size: center;
+        height: 700px;       
+    }
+  }

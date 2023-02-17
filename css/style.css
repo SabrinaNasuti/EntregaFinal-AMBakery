@@ -36,7 +36,38 @@
 a {
   font-family: "Barlow", sans-serif !important; }
 
+/* MEDIA QUERY = DISPOITIVOS MEDIANOS */
+/* Dispositivos hasta 768px son considerados medianos  */
+@media (max-width: 768px) {
+  .img-logo {
+    width: 200px; }
+  .navegador__listaMenu {
+    font-size: 20px;
+    list-style: none;
+    padding: 10px; }
+  .navegador__listaMenu-activo {
+    font-size: 25px; } }
+
+/*  Dispositivos HASTA 425px  - CELULARES */
+@media (max-width: 425px) {
+  .navegador__listaMenu a {
+    text-decoration: none;
+    color: #fafaf1; }
+  p {
+    padding: 1rem 1rem 1rem 1rem; }
+  .img-logo {
+    width: 150px; }
+  .navegador__listaMenu {
+    font-size: 15px;
+    list-style: none;
+    padding: 10px; }
+  .navegador__listaMenu-activo {
+    font-size: 15px; } }
+
 /* FOOTER */
+h4 {
+  font-family: "Barlow", sans-serif; }
+
 .footer {
   background-color: #fafaf1; }
 
@@ -71,6 +102,7 @@ h2 {
   margin: 0 0 1rem 3rem; }
 
 p {
+  font-family: "Barlow", sans-serif;
   color: black;
   text-align: center;
   padding: 0rem 2rem 2rem 2rem;
@@ -86,6 +118,13 @@ p {
   justify-content: space-between;
   align-items: flex-start; }
 
+/*  Dispositivos HASTA 425px  - CELULARES */
+@media (max-width: 425px) {
+  .encabezado-comoPedir {
+    background-image: url(https://res.cloudinary.com/dfbwcrulp/image/upload/v1676417192/desarrollo_web/20220215_134256_kljjlx.jpg);
+    background-size: center;
+    height: 700px; } }
+
 .encabezado-contacto {
   background-image: url(https://res.cloudinary.com/dfbwcrulp/image/upload/v1676504642/desarrollo_web/opcion4_i0xq7c.webp);
   background-size: cover;
@@ -94,6 +133,13 @@ p {
   display: flex;
   justify-content: space-between;
   align-items: flex-start; }
+
+/*  Dispositivos HASTA 425px  - CELULARES */
+@media (max-width: 425px) {
+  .encabezado-contacto {
+    background-image: url(https://res.cloudinary.com/dfbwcrulp/image/upload/v1676595934/desarrollo_web/creaciones4_wnk1cq.jpg);
+    background-size: center;
+    height: 700px; } }
 
 .encabezado-creaciones {
   background-image: url(https://res.cloudinary.com/dfbwcrulp/image/upload/v1676417150/desarrollo_web/header-creaciones.jpg);
@@ -104,40 +150,12 @@ p {
   justify-content: space-between;
   align-items: flex-start; }
 
-/* MEDIA QUERY = DISPOITIVOS MEDIANOS */
-/* Dispositivos hasta 768px son considerados medianos  */
-@media (max-width: 768px) {
-  .img-logo {
-    width: 200px; }
-  .navegador__listaMenu {
-    font-size: 20px;
-    list-style: none;
-    padding: 10px; }
-  .navegador__listaMenu-activo {
-    font-size: 25px; } }
-
 /*  Dispositivos HASTA 425px  - CELULARES */
 @media (max-width: 425px) {
-  .navegador__listaMenu a {
-    text-decoration: none;
-    color: #fafaf1; }
-  .encabezado-home {
-    background-image: url(../recursos/inLove.jpg);
-    background-size: center; }
-  p {
-    padding: 1rem 1rem 1rem 1rem; }
-  .img-logo {
-    width: 150px; }
   .encabezado-creaciones {
-    background-image: url(../recursos/creaciones-copo.jpg);
+    background-image: url(https://res.cloudinary.com/dfbwcrulp/image/upload/v1676417152/desarrollo_web/creaciones-copo_qc1szg.jpg);
     background-size: center;
-    height: 700px; }
-  .navegador__listaMenu {
-    font-size: 15px;
-    list-style: none;
-    padding: 10px; }
-  .navegador__listaMenu-activo {
-    font-size: 15px; } }
+    height: 700px; } }
 
 .encabezado-cursos {
   background-image: url(https://res.cloudinary.com/dfbwcrulp/image/upload/v1676504553/desarrollo_web/header-creaciones1.jpg);
@@ -147,6 +165,13 @@ p {
   display: flex;
   justify-content: space-between;
   align-items: flex-start; }
+
+/*  Dispositivos HASTA 425px  - CELULARES */
+@media (max-width: 425px) {
+  .encabezado-cursos {
+    background-image: url(https://res.cloudinary.com/dfbwcrulp/image/upload/v1676595943/desarrollo_web/20220212_124848_f341bf.jpg);
+    background-size: center;
+    height: 700px; } }
 
 .encabezado-home {
   background-image: url(https://res.cloudinary.com/dfbwcrulp/image/upload/v1676417148/desarrollo_web/home.jpg);
@@ -165,6 +190,13 @@ p {
   display: flex;
   justify-content: space-between;
   align-items: flex-start; }
+
+/*  Dispositivos HASTA 425px  - CELULARES */
+@media (max-width: 425px) {
+  .encabezado-quienSoy {
+    background-image: url(https://res.cloudinary.com/dfbwcrulp/image/upload/v1676417190/desarrollo_web/opcion_rnfyze.jpg);
+    background-size: center;
+    height: 700px; } }
 
 /* SECCIÓN - CREACIONES */
 .grid-galeria {

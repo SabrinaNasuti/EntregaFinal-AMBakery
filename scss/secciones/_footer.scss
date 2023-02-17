@@ -1,6 +1,10 @@
 /* FOOTER */
+
+h4{
+    font-family: $typo-principal;
+}
 .footer {
-    background-color: rgb(250, 250, 241);
+    background-color: $color-primario;
 }
 
 .tituloFooter {
@@ -15,7 +19,7 @@
 
 .listaFooter a {
     text-decoration: none;
-    color: black;
+    color: $color-letra-principal;
 }
 
 .img-footer {
