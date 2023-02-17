@@ -7,19 +7,20 @@ main {
 
 h1 {
     padding: 3rem;
-    font-size: $titulos;
+    font-size: $titulos !important;
 }
 
 h2{
-    font-family: $typo-principal;    
+    font-family: $typo-principal !important;    
     font-size: $titulos-secundarios;
     margin:  0 0 1rem 3rem; 
 }
 
 p {
-    color: $color-letra-principal;
+    color: $color-letra-principal ;
     text-align: center;
     padding: 0rem 2rem 2rem 2rem;
     font-size: $texto-gereral;
     text-align: $texto-orientacion;
 }
+

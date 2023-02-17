@@ -33,6 +33,9 @@
 .navegador__listaMenu-activo {
   font-size: 25px; }
 
+a {
+  font-family: "Barlow", sans-serif !important; }
+
 /* FOOTER */
 .footer {
   background-color: #fafaf1; }
@@ -60,10 +63,10 @@ main {
 
 h1 {
   padding: 3rem;
-  font-size: 45px; }
+  font-size: 45px !important; }
 
 h2 {
-  font-family: "Barlow", sans-serif;
+  font-family: "Barlow", sans-serif !important;
   font-size: 35px;
   margin: 0 0 1rem 3rem; }
 

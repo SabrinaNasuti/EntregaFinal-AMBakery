@@ -25,7 +25,6 @@
 }
 
 
-
 .navegador__listaMenu a {
     text-decoration: none;  
     color: black;
@@ -33,4 +32,8 @@
 
 .navegador__listaMenu-activo {
     font-size: $titulo-navegador-activo;
+}
+
+a{
+    font-family: $typo-principal !important;
 }
