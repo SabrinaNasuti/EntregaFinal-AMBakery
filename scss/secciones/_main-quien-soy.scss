@@ -1,12 +1,119 @@
-.div-quien-soy{    
-    font-family: $typo-principal;
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-evenly;
+.quien-soy {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 20% 45% 45%;
+  grid-template-areas:
+    "banner-quien-soy banner-quien-soy"
+    "foto-quien-soy texto-quien-soy"
+    "foto-quien-soy texto-quien-soy";
+
+  font-family: $typo-secundaria;
 }
 
-.foto-presentacion{
-    height: 500px;  
-    margin:  0 0 0 2rem;     
-    
+.banner-quien-soy {
+  grid-area: banner-quien-soy;
+  font-family: $typo-secundaria;
+}
+
+.foto-quien-soy {
+  grid-area: foto-quien-soy;
+}
+
+.texto-quien-soy {
+  grid-area: texto-quien-soy;
+  font-family: $typo-secundaria;
+}
+
+.quien-soy {
+  height: 1000px;
+}
+
+.foto-presentacion {
+  width: 100%;
+}
+
+
+
+
+
+/* MEDIA QUERY = DISPOITIVOS MEDIANOS */
+/* Dispositivos hasta 768px son considerados medianos  */
+@media (max-width: 768px) {
+  .quien-soy {
+    height: 1700px;
+  }
+
+  .foto-presentacion {
+    width: 100%;
+  }
+
+  .quien-soy {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 5% 50% 45%;
+
+    grid-template-areas:
+      "banner-quien-soy"
+      "texto-quien-soy"
+      "foto-quien-soy";
+  }
+
+  .banener-quien-soy {
+    grid-area: banner-quien-soy;
+  }
+
+  .foto-quien-soy {
+    grid-area: foto-quien-soy;
+    background-image: cover;
+  }
+
+  .texto-quien-soy {
+    grid-area: texto-quien-soy;
+  }
+}
+
+
+
+
+
+
+/*  Dispositivos HASTA 425px  - CELULARES */
+@media (max-width: 425px) {
+  .quien-soy {
+    height: 1400px;
+  }
+
+  .foto-presentacion {
+    width: 100%;
+  }
+
+  .encabezado-quienSoy {
+    background-image: url(https://res.cloudinary.com/dfbwcrulp/image/upload/v1676417190/desarrollo_web/opcion_rnfyze.jpg);
+    background-size: cover;
+  }
+
+  .quien-soy {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 10% 60% 30%;
+
+    grid-auto-flow: row;
+    grid-template-areas:
+      "banner-quien-soy"
+      "texto-quien-soy"
+      "foto-quien-soy";
+  }
+
+  .banener-quien-soy {
+    grid-area: banner-quien-soy;
+  }
+
+  .texto-quien-soy {
+    grid-area: texto-quien-soy;
+  }
+
+  .foto-quien-soy {
+    grid-area: foto-quien-soy;
+    background-image: cover;
+  }
 }

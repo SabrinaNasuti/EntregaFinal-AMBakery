@@ -69,8 +69,9 @@ a {
 h4 {
   font-family: "Barlow", sans-serif; }
 
-.footer {
-  background-color: #fafaf1; }
+footer {
+  background-color: #fafaf1;
+  height: auto; }
 
 .tituloFooter {
   font-size: 15px;
@@ -89,9 +90,8 @@ h4 {
   float: left; }
 
 main {
-  background-color: #adada9;
-  height: auto;
-  padding: 0 0 3rem 0; }
+  background-color: #FAE9E1;
+  height: auto; }
 
 h1 {
   padding: 3rem;
@@ -103,7 +103,7 @@ h2 {
   margin: 0 0 1rem 3rem; }
 
 p {
-  font-family: "Barlow", sans-serif;
+  font-family: "Montserrat", sans-serif;
   color: black;
   text-align: center;
   padding: 0rem 2rem 2rem 2rem;
@@ -191,13 +191,6 @@ p {
   display: flex;
   justify-content: space-between;
   align-items: flex-start; }
-
-/*  Dispositivos HASTA 425px  - CELULARES */
-@media (max-width: 425px) {
-  .encabezado-quienSoy {
-    background-image: url(https://res.cloudinary.com/dfbwcrulp/image/upload/v1676417190/desarrollo_web/opcion_rnfyze.jpg);
-    background-size: center;
-    height: 700px; } }
 
 /* SECCIÓN - CREACIONES */
 .grid-galeria {
@@ -417,16 +410,32 @@ p {
     height: 100%;
     object-fit: cover; } }
 
-.div-cursos {
-  font-family: "Barlow", sans-serif;
-  display: flex;
-  flex-direction: row-reverse;
-  justify-content: space-evenly; }
+.curso {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  grid-template-rows: 50% 50%;
+  grid-template-areas: "video-curso texto-curso" "video-curso texto-curso"; }
 
-.videos-cursos {
-  height: 500px;
-  width: 400px;
-  margin: 0 0 0 3rem; }
+.texto-curso {
+  grid-area: texto-curso; }
+
+.video-curso {
+  grid-area: video-curso; }
+
+.video-curso-p {
+  height: 400px;
+  width: 100%; }
+
+/* MEDIA QUERY = DISPOITIVOS MEDIANOS */
+/* Dispositivos hasta 768px son considerados medianos  */
+@media (max-width: 425px) {
+  .curso {
+    height: 1700px; }
+  .curso {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 70% 30%;
+    grid-template-areas: "texto-curso" "video-curso"; } }
 
 /* ANIMACIONES */
 .h1-bienvenidos {
@@ -450,12 +459,90 @@ p {
   font-family: "Barlow", sans-serif;
   font-size: 22px; }
 
-.div-quien-soy {
+.formulario {
   font-family: "Barlow", sans-serif;
-  display: flex;
-  flex-direction: row-reverse;
-  justify-content: space-evenly; }
+  font-size: 22px; }
+
+.texto-formulario {
+  width: 100%; }
+
+.form {
+  height: 500px; }
+
+/* MEDIA QUERY = DISPOITIVOS MEDIANOS */
+/* Dispositivos hasta 768px son considerados medianos  */
+@media (max-width: 768px) {
+  .form {
+    height: 700px; } }
+
+/*  Dispositivos HASTA 425px  - CELULARES */
+@media (max-width: 425px) {
+  .form {
+    height: 700px; } }
+
+.quien-soy {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 20% 45% 45%;
+  grid-template-areas: "banner-quien-soy banner-quien-soy" "foto-quien-soy texto-quien-soy" "foto-quien-soy texto-quien-soy";
+  font-family: "Montserrat", sans-serif; }
+
+.banner-quien-soy {
+  grid-area: banner-quien-soy;
+  font-family: "Montserrat", sans-serif; }
+
+.foto-quien-soy {
+  grid-area: foto-quien-soy; }
+
+.texto-quien-soy {
+  grid-area: texto-quien-soy;
+  font-family: "Montserrat", sans-serif; }
+
+.quien-soy {
+  height: 1000px; }
 
 .foto-presentacion {
-  height: 500px;
-  margin: 0 0 0 2rem; }
+  width: 100%; }
+
+/* MEDIA QUERY = DISPOITIVOS MEDIANOS */
+/* Dispositivos hasta 768px son considerados medianos  */
+@media (max-width: 768px) {
+  .quien-soy {
+    height: 1700px; }
+  .foto-presentacion {
+    width: 100%; }
+  .quien-soy {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 5% 50% 45%;
+    grid-template-areas: "banner-quien-soy" "texto-quien-soy" "foto-quien-soy"; }
+  .banener-quien-soy {
+    grid-area: banner-quien-soy; }
+  .foto-quien-soy {
+    grid-area: foto-quien-soy;
+    background-image: cover; }
+  .texto-quien-soy {
+    grid-area: texto-quien-soy; } }
+
+/*  Dispositivos HASTA 425px  - CELULARES */
+@media (max-width: 425px) {
+  .quien-soy {
+    height: 1400px; }
+  .foto-presentacion {
+    width: 100%; }
+  .encabezado-quienSoy {
+    background-image: url(https://res.cloudinary.com/dfbwcrulp/image/upload/v1676417190/desarrollo_web/opcion_rnfyze.jpg);
+    background-size: cover; }
+  .quien-soy {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 10% 60% 30%;
+    grid-auto-flow: row;
+    grid-template-areas: "banner-quien-soy" "texto-quien-soy" "foto-quien-soy"; }
+  .banener-quien-soy {
+    grid-area: banner-quien-soy; }
+  .texto-quien-soy {
+    grid-area: texto-quien-soy; }
+  .foto-quien-soy {
+    grid-area: foto-quien-soy;
+    background-image: cover; } }

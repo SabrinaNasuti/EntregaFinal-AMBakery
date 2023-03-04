@@ -2,7 +2,7 @@
 main {
     background-color: $color-secundario;
     height: auto;
-    padding: 0 0 3rem 0;
+    // padding: 0 0 3rem 0;
 }
 
 h1 {
@@ -17,7 +17,7 @@ h2{
 }
 
 p {
-    font-family: $typo-principal;
+    font-family: $typo-secundaria;
     color: $color-letra-principal ;
     text-align: center;
     padding: 0rem 2rem 2rem 2rem;

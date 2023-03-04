@@ -1,6 +1,37 @@
-
-.texto{
-    font-family: $typo-principal ;
-    font-size: $texto-gereral ;
+.texto {
+  font-family: $typo-principal;
+  font-size: $texto-gereral;
 }
 
+.formulario {
+  font-family: $typo-principal;
+  font-size: $texto-gereral;
+}
+
+.texto-formulario {
+  width: 100%;
+}
+
+.form {
+    height: 500px;
+  }
+
+/* MEDIA QUERY = DISPOITIVOS MEDIANOS */
+/* Dispositivos hasta 768px son considerados medianos  */
+@media (max-width: 768px) {
+  .form {
+    height: 700px;    
+  }
+
+}
+
+/*  Dispositivos HASTA 425px  - CELULARES */
+@media (max-width: 425px) {
+  .form {
+    height: 700px;
+  }
+
+ 
+
+  
+}

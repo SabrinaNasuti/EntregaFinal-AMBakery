@@ -1,13 +1,44 @@
-.div-cursos{
-    font-family: $typo-principal;
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-evenly;
+
+.curso {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  grid-template-rows: 50% 50%;
+  
+  grid-template-areas:
+    "video-curso texto-curso"
+    "video-curso texto-curso";
 }
 
-.videos-cursos {    
-    height: 500px;
-    width: 400px;    
-    margin:  0 0 0 3rem;
+.texto-curso {
+  grid-area: texto-curso;
 }
 
+.video-curso {
+  grid-area: video-curso;
+  
+}
+
+.video-curso-p{
+  height: 400px; 
+  width: 100%;
+  
+}
+
+/* MEDIA QUERY = DISPOITIVOS MEDIANOS */
+/* Dispositivos hasta 768px son considerados medianos  */
+@media (max-width: 425px) {
+
+    .curso{
+        height: 1700px;
+    }
+    .curso {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 70% 30%;
+        
+        grid-template-areas:
+          "texto-curso"
+          "video-curso";
+      }
+
+}
