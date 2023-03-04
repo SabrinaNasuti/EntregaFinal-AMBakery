@@ -35,13 +35,10 @@ footer {
   grid-template-rows: 1fr;
   grid-template-areas: "logo-footer seguime-footer contacto-footer";
   align-items: center;
-  
-
 }
 
 .logo-footer {
   grid-area: logo-footer;
-  
 }
 
 .seguime-footer {
@@ -52,5 +49,4 @@ footer {
 .contacto-footer {
   grid-area: contacto-footer;
   font-family: $typo-secundaria;
-  
 }

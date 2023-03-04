@@ -14,14 +14,12 @@
 }
 
 .video-curso {
-  grid-area: video-curso;
-  
+  grid-area: video-curso;  
 }
 
 .video-curso-p{
   height: 400px; 
-  width: 100%;
-  
+  width: 100%;  
 }
 
 /* MEDIA QUERY = DISPOITIVOS MEDIANOS */
@@ -40,5 +38,4 @@
           "texto-curso"
           "video-curso";
       }
-
 }
