@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="pastelería,pedidos,contactos,telefono,email,sugerencia,comentario">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
   <link rel="icon"
     href="https://res.cloudinary.com/dfbwcrulp/image/upload/v1676417148/desarrollo_web/ambakery_logo_w1yj3w.jpg">
@@ -49,77 +50,82 @@
   <!-- Cuerpo -->
   <main>
     <h1>CONTACTO</h1>
-    <p>Tus comentarios y/o consultas son bienvenidos!!!</p>
+    <p class="texto-contacto">Tus comentarios y/o consultas son bienvenidos!!!</p>
 
-    <form class="row g-3">
+    <form class="row g-3 form-contacto texto-contacto">
       <div class="col-6">
-        <label for="inputAddress" class="form-label">Nombre</label>
-        <input type="text" class="form-control" placeholder="Nombre">
+        <label for="inputAddress" class="form-label texto-contacto">Nombre</label>
+        <input type="text" class="form-control texto-contacto" placeholder="Nombre">
       </div>
-      <div class="col-6">
-        <label for="inputAddress" class="form-label">Apellido</label>
-        <input type="text" class="form-control" placeholder="Apellido">
+      <div class="col-6 texto-contacto">
+        <label for="inputAddress" class="form-label texto-contacto">Apellido</label>
+        <input type="text" class="form-control texto-contacto" placeholder="Apellido">
       </div>
-      <div class="col-md-12">
-        <label for="inputEmail4" class="form-label">Email</label>
-        <input type="email" class="form-control" id="inputEmail4">
+      <div class="col-md-12 texto-contacto">
+        <label for="inputEmail4" class="form-label texto-contacto">Email</label>
+        <input type="email" class="form-control texto-contacto" id="inputEmail4">
       </div>
-      <div class="col-md-6">
+      <div class="col-md-6 texto-contacto">
         <label for="inputCity" class="form-label">Tel</label>
         <input type="number" class="form-control" id="Tel" placeholder="0336-15458938">
       </div>
-      <div class="col-md-6">
-        <label for="inputState" class="form-label">State</label>
-        <select id="inputState" class="form-select">
-          <option selected>Opciones...</option>
+      <div class="col-md-6 texto-contacto">
+        <label for="inputState" class="form-label texto-contacto">Opciones</label>
+        <select id="inputState" class="form-select texto-contacto">
+          <option selected class="opciones-contacto texto-contacto">Opciones...</option>
           <option>Consulta</option>
           <option>Cotizacion</option>
         </select>
       </div>
-      <div class="form-floating">
-        <textarea class="form-control" placeholder="Comentario..." id="floatingTextarea2"
+      <div class="form-floating texto-contacto">
+        <textarea class="form-control texto-contacto" placeholder="Comentario..." id="floatingTextarea2"
           style="height: 100px"></textarea>
         <label for="floatingTextarea2"></label>
       </div>
 
-      <div class="col-12">
-        <button type="submit" class="btn btn-primary bg-secondary text-dark border-0"> Enviar </button>
+      <div class="col-12 texto-contacto">
+        <button type="submit" class="texto-contacto btn btn-primary bg-secondary text-dark border-0"> Enviar </button>
       </div>
     </form>
-
   </main>
+
+
   <!-- Pie de página -->
   <footer>
-    <!-- Logo en pie de página -->
-    <a href="../index.html">
-      <img src="https://res.cloudinary.com/dfbwcrulp/image/upload/v1676504920/desarrollo_web/logo.jpg"
-        alt="AM Bakery Logo" class="img-footer">
-    </a>
+    <div class="footer">
+      <div class="logo-footer">
+        <a href="./index.html">
+          <img src="https://res.cloudinary.com/dfbwcrulp/image/upload/v1676504920/desarrollo_web/logo.jpg"
+            alt="AM Bakery Logo" class="img-footer">
+        </a>
+      </div>
+      <div class="seguime-footer">
+        <h4 class="tituloFooter">SEGUIME</h4>
 
-    <h4 class="tituloFooter">SEGUIME</h4>
+        <ul class="listaFooter">
+          <li>
+            <i class="fa-brands fa-instagram"></i>
+            <a href="https://www.instagram.com/ambakery.ros/" target="_blank">Instagram</a>
+          </li>
+        </ul>
+      </div>
+      <div class="contacto-footer">
+        <h4 class="tituloFooter">CONTACTO</h4>
 
-    <!-- Lista no ordenada -->
-    <ul class="listaFooter">
-      <li>
-        <i class="fa-brands fa-instagram"></i>
-        <a href="https://www.instagram.com/ambakery.ros/" target="_blank">Instagram</a>
-      </li>
-    </ul>
-
-    <h4 class="tituloFooter">CONTACTO</h4>
-
-    <!-- Lista no ordenada -->
-    <ul class="listaFooter">
-      <li>
-        <i class="fa-solid fa-phone"></i>
-        <a href="tel:+5493412793436">Teléfono</a>
-      </li>
-      <li>
-        <i class="fa-solid fa-envelope"></i>
-        <a href="mailto:ayelenmiretti@gmail.com">Mail</a>
-      </li>
-    </ul>
+        <ul class="listaFooter">
+          <li>
+            <i class="fa-solid fa-phone"></i>
+            <a href="tel:+5493412793436">Teléfono</a>
+          </li>
+          <li>
+            <i class="fa-solid fa-envelope"></i>
+            <a href="mailto:ayelenmiretti@gmail.com">Mail</a>
+          </li>
+        </ul>
+      </div>
+    </div>
   </footer>
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
     crossorigin="anonymous"></script>
@@ -130,6 +136,5 @@
   </script>
 
 </body>
-
 
 </html>

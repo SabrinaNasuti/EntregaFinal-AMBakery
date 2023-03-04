@@ -1,0 +1,29 @@
+.form-contacto {
+  font-family: $typo-secundaria;
+  height: 600px;
+}
+
+.opciones-contacto {
+  font-family: $typo-secundaria !important;
+}
+
+.texto-contacto {
+  font-family: $typo-secundaria !important;
+}
+
+/* MEDIA QUERY = DISPOITIVOS MEDIANOS */
+/* Dispositivos hasta 768px son considerados medianos  */
+@media (max-width: 768px) {
+  .form-contacto {
+    font-family: $typo-secundaria;
+    height: 600px;
+  }
+}
+
+/*  Dispositivos HASTA 425px  - CELULARES */
+@media (max-width: 425px) {
+  .form-contacto {
+    font-family: $typo-secundaria;
+    height: 700px;
+  }
+}

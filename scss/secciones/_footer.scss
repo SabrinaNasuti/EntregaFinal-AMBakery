@@ -1,30 +1,56 @@
 /* FOOTER */
 
-h4{
-    font-family: $typo-principal;
+h4 {
+  font-family: $typo-principal;
 }
 
-footer{
-    background-color: $color-primario;
-    height: auto;
+footer {
+  background-color: $color-primario;
+  height: auto;
 }
 
 .tituloFooter {
-    font-size: 15px;
-    font-weight: bold;
+  font-size: 15px;
+  font-weight: bold;
 }
 
 .listaFooter {
-    font-size: 20px;
-    list-style: none;
+  font-size: 20px;
+  list-style: none;
 }
 
 .listaFooter a {
-    text-decoration: none;
-    color: $color-letra-principal;
+  text-decoration: none;
+  color: $color-letra-principal;
 }
 
 .img-footer {
-    width: 120px;
-    float: left;
+  width: 120px;
+  float: left;
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "logo-footer seguime-footer contacto-footer";
+  align-items: center;
+  
+
+}
+
+.logo-footer {
+  grid-area: logo-footer;
+  
+}
+
+.seguime-footer {
+  grid-area: seguime-footer;
+  font-family: $typo-secundaria;
+}
+
+.contacto-footer {
+  grid-area: contacto-footer;
+  font-family: $typo-secundaria;
+  
 }

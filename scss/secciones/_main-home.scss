@@ -1,26 +1,38 @@
 /* ANIMACIONES */
 
-.h1-bienvenidos{
-    animation-name: bienvenidos;
-    animation-duration: 1s;
-    animation-iteration-count: 1 ;
-     font-size: $titulos-home;
+.h1-bienvenidos {
+  animation-name: bienvenidos;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  font-size: $titulos-home;
 }
 
+@keyframes bienvenidos {
+  10% {
+    color: grey;
+    transform: translateX(20px);
+  }
+  50% {
+    color: rgb(198, 189, 189);
+    transform: translateX(70px);
+  }
+  100% {
+    color: rgb(250, 250, 241);
+    transform: translateX(70px);
+  }
 
+  /* MEDIA QUERY = DISPOITIVOS MEDIANOS */
+  /* Dispositivos hasta 768px son considerados medianos  */
+  @media (max-width: 768px) {
+    .main-home {
+      height: 1000px;
+    }
+  }
 
-@keyframes bienvenidos{
-    10%{
-        color: grey;
-        transform: translateX(20px);
-
+  /*  Dispositivos HASTA 425px  - CELULARES */
+  @media (max-width: 425px) {
+    .main-home {
+      height: 1200px;
     }
-    50%{
-        color: rgb(198, 189, 189);
-        transform: translateX(70px);        
-    }
-    100%{
-        color: rgb(250, 250, 241);
-        transform: translateX(70px); 
-    }
+  }
 }

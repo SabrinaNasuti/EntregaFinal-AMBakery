@@ -89,6 +89,24 @@ footer {
   width: 120px;
   float: left; }
 
+.footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "logo-footer seguime-footer contacto-footer";
+  align-items: center; }
+
+.logo-footer {
+  grid-area: logo-footer; }
+
+.seguime-footer {
+  grid-area: seguime-footer;
+  font-family: "Montserrat", sans-serif; }
+
+.contacto-footer {
+  grid-area: contacto-footer;
+  font-family: "Montserrat", sans-serif; }
+
 main {
   background-color: #FAE9E1;
   height: auto; }
@@ -440,7 +458,7 @@ p {
 /* ANIMACIONES */
 .h1-bienvenidos {
   animation-name: bienvenidos;
-  animation-duration: 1s;
+  animation-duration: 2s;
   animation-iteration-count: 1;
   font-size: 60px; }
 
@@ -453,7 +471,16 @@ p {
     transform: translateX(70px); }
   100% {
     color: #fafaf1;
-    transform: translateX(70px); } }
+    transform: translateX(70px); }
+  /* MEDIA QUERY = DISPOITIVOS MEDIANOS */
+  /* Dispositivos hasta 768px son considerados medianos  */
+  @media (max-width: 768px) {
+    .main-home {
+      height: 1000px; } }
+  /*  Dispositivos HASTA 425px  - CELULARES */
+  @media (max-width: 425px) {
+    .main-home {
+      height: 1200px; } } }
 
 .texto {
   font-family: "Barlow", sans-serif;
@@ -467,7 +494,13 @@ p {
   width: 100%; }
 
 .form {
-  height: 500px; }
+  height: 500px;
+  font-family: "Barlow", sans-serif;
+  font-size: 22px; }
+
+.opciones-como-pedir {
+  font-family: "Barlow", sans-serif;
+  font-size: 22px; }
 
 /* MEDIA QUERY = DISPOITIVOS MEDIANOS */
 /* Dispositivos hasta 768px son considerados medianos  */
@@ -546,3 +579,26 @@ p {
   .foto-quien-soy {
     grid-area: foto-quien-soy;
     background-image: cover; } }
+
+.form-contacto {
+  font-family: "Montserrat", sans-serif;
+  height: 600px; }
+
+.opciones-contacto {
+  font-family: "Montserrat", sans-serif !important; }
+
+.texto-contacto {
+  font-family: "Montserrat", sans-serif !important; }
+
+/* MEDIA QUERY = DISPOITIVOS MEDIANOS */
+/* Dispositivos hasta 768px son considerados medianos  */
+@media (max-width: 768px) {
+  .form-contacto {
+    font-family: "Montserrat", sans-serif;
+    height: 600px; } }
+
+/*  Dispositivos HASTA 425px  - CELULARES */
+@media (max-width: 425px) {
+  .form-contacto {
+    font-family: "Montserrat", sans-serif;
+    height: 700px; } }

@@ -13,16 +13,21 @@
 }
 
 .form {
-    height: 500px;
-  }
+  height: 500px;
+  font-family: $typo-principal;
+  font-size: $texto-gereral;
+}
+.opciones-como-pedir{
+  font-family: $typo-principal;
+  font-size: $texto-gereral;
+}
 
 /* MEDIA QUERY = DISPOITIVOS MEDIANOS */
 /* Dispositivos hasta 768px son considerados medianos  */
 @media (max-width: 768px) {
   .form {
-    height: 700px;    
+    height: 700px;
   }
-
 }
 
 /*  Dispositivos HASTA 425px  - CELULARES */
@@ -30,8 +35,4 @@
   .form {
     height: 700px;
   }
-
- 
-
-  
 }
